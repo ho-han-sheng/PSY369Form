@@ -2,7 +2,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Affective Slider (AS) pure HTML5 Example</title>
+	<title>PSY369 Group 8 Expressivity Scales</title>
 
 <style>
 
@@ -168,15 +168,16 @@ div {
 
 </style>
 </head>
+
 <body>
 
-	<form class="AffectiveSlider">
+	<form class="AffectiveSlider" action="https://usebasin.com/f/f0075dcb35dd" method="POST">
         <ol>
             <li>
             Level of arousal
             <div class="arousal"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_sleepy.svg"></object> 
-                <input type="range" name="AS-arousal" id="AS-arousal" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="arousal1" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_wideawake.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object>
             </div>
@@ -184,7 +185,7 @@ div {
             Level of pleasure 
             <div class="pleasure"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_unhappy.svg"></object> 
-                <input type="range" name="AS-pleasure" id="AS-pleasure" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="pleasure1" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_happy.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object> 
             </div>
@@ -194,7 +195,7 @@ div {
             Level of arousal
             <div class="arousal"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_sleepy.svg"></object> 
-                <input type="range" name="AS-arousal" id="AS-arousal" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="arousal2" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_wideawake.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object>
             </div>
@@ -202,7 +203,7 @@ div {
             Level of pleasure 
             <div class="pleasure"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_unhappy.svg"></object> 
-                <input type="range" name="AS-pleasure" id="AS-pleasure" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="pleasure2" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_happy.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object> 
             </div>
@@ -212,7 +213,7 @@ div {
             Level of arousal
             <div class="arousal"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_sleepy.svg"></object> 
-                <input type="range" name="AS-arousal" id="AS-arousal" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="arousal3" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_wideawake.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object>
             </div>
@@ -220,7 +221,7 @@ div {
             Level of pleasure 
             <div class="pleasure"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_unhappy.svg"></object> 
-                <input type="range" name="AS-pleasure" id="AS-pleasure" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="pleasure3" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_happy.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object> 
             </div>
@@ -230,7 +231,7 @@ div {
             Level of arousal
             <div class="arousal"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_sleepy.svg"></object> 
-                <input type="range" name="AS-arousal" id="AS-arousal" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="arousal4" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_wideawake.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object>
             </div>
@@ -238,20 +239,20 @@ div {
             Level of pleasure 
             <div class="pleasure"> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_unhappy.svg"></object> 
-                <input type="range" name="AS-pleasure" id="AS-pleasure" value=".5" min="0" max="1" step=".01" /> 
+                <input type="range" name="pleasure4" value=".5" min="0" max="1" step=".01" /> 
                 <object class="arousal_svg" type="image/svg+xml" data="images/AS_happy.svg"></object> 
                 <object class="intensity_cue_svg" type="image/svg+xml" data="images/AS_intensity_cue.svg"></object> 
             </div>
             </li>
             <li>
                 <label for="fname">Unique ID (same ID used for other form):</label><br>
-                <input type="text" id="uid" name="uid"><br>
+                <input type="text" name="username" required><br>
                 <label for="lname">Recorded by:</label><br>
-                <input type="text" id="recorder" name="recorder">
+                <input type="text" name="recorded" required>
             </li>
         </ol>
 
-        <input type='submit' value='Submit'/>
+		<button type="submit">Submit</button>
 
 	</form>
 
